@@ -1,0 +1,235 @@
+/*estilos de buena practica*/
+*{
+        box-sizing: border-box;
+}
+html,body{
+    margin:0;
+    padding: 0;
+    height: 100%;
+}
+
+body{
+    background-color: #9FDFFF;
+
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+/*Estilos de formularios*/
+
+input{
+    border: none;
+    box-shadow: 5px 5px 5px #11485f;
+}
+
+#cabecera{
+    top: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.95);
+    box-shadow: 10px 0 10px black;
+    position: fixed;
+    z-index: 99;
+}
+
+#contenido{
+    padding: 2em;
+    height: 400px;
+
+}
+
+#error{
+    background-color: red;
+}
+
+#success{
+    background-color: #8db600;
+    
+}
+
+.info{
+    color: white;
+    display: none;
+    text-align: center;
+    border-radius: 2em;
+}
+
+.login{
+    position: relative;
+    top: 70px;
+    height: 100%;
+
+}
+
+.login .cuadrocentral{
+    position: relative;
+    top: 10em; 
+}
+
+.cuadrocentral{
+    width: auto;
+    height: auto;
+    padding: 3em;
+    box-shadow: 5px 5px 10px #666;
+    border: 1px solid silver;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.img-header{
+    width: 60px;
+    height: 60px;
+    background-color: #FFF;
+    border-radius: 51%;
+    margin-left: 15%;
+    position: absolute;
+}
+
+.btn-custom{
+    border-radius: 0px;
+}
+
+
+/*CONTENIDO ADICIONAL*/
+
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 200px;
+}
+
+#sidebar-wrapper {
+	top: 70px;
+    z-index: 1000;
+    position: fixed;
+    left: 200px;
+    width: 0;
+    height: 100%;
+    margin-left: -200px;
+    overflow-y: auto;
+    background: #3388aa;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+	top: 70px;
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -200px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 50px;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 80px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: white;
+    background-color: #0A455D;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+
+}
+
+@media(min-width:768px) {
+
+    #wrapper {
+        padding-left: 200px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 200px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+@media(max-width:768px) {
+    #cabecera h1{
+    	font-size: 16px;
+    }
+}
